@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="kk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Canva — Damu AI</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canva — Damu AI</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="topbar"><div class="container nav"><a class="brand" href="index.html"><span class="brand-logo">📘</span> Damu AI</a></div></div>
-<section class="page-hero"><div class="container"><a class="back-link" href="index.html">← Барлық курстар</a>
-<div class="course-shell">
-<div class="player-card">
-<h1>🎨 Canva курсы</h1>
-<p>Canva арқылы әдемі дизайн, пост, презентация және визуалды материалдар жасауды үйрен.</p>
-<iframe id="video-canva" class="video-frame" src="https://www.youtube.com/embed/8XroIaIyPXY" allowfullscreen></iframe>
-<div class="action-row"><button class="action complete" onclick="showDone('Canva')">Сабақты аяқтау</button><button class="action openquiz" onclick="toggleQuiz('quiz-canva')">Тестті ашу</button></div>
-<div id="quiz-canva" class="quiz-box">
-<div class="question"><p>1. Canva не үшін қолданылады?</p><label><input type="radio" name="c1" value="1"> Дизайн жасау үшін</label><label><input type="radio" name="c1" value="0"> Қоңырау шалу үшін</label></div>
-<div class="question"><p>2. Шаблон не үшін керек?</p><label><input type="radio" name="c2" value="1"> Жұмысты тез бастау үшін</label><label><input type="radio" name="c2" value="0"> Сайтты өшіру үшін</label></div>
-<div class="question"><p>3. Canva-да мәтін қосуға бола ма?</p><label><input type="radio" name="c3" value="1"> Иә</label><label><input type="radio" name="c3" value="0"> Жоқ</label></div>
-<button class="action openquiz" onclick="checkQuiz('c','result-canva',3)">Нәтижені көру</button><div id="result-canva" class="result">Нәтиже осында шығады.</div>
-</div>
-</div>
-<div class="side-card"><div class="lesson-list">
-<button class="lesson-btn active" onclick="setVideo('video-canva',this,'8XroIaIyPXY')">1-сабақ<small>Canva-ға кіріспе</small></button>
-<button class="lesson-btn" onclick="setVideo('video-canva',this,'LSoFhtOnUaE')">2-сабақ<small>Интерфейспен танысу</small></button>
-<button class="lesson-btn" onclick="setVideo('video-canva',this,'iKq5Cdff6uk')">3-сабақ<small>Шаблондармен жұмыс</small></button>
-<button class="lesson-btn" onclick="setVideo('video-canva',this,'nIhfQqX__Rg')">4-сабақ<small>Мәтінмен жұмыс</small></button>
-<button class="lesson-btn" onclick="setVideo('video-canva',this,'OZGL-o0Y4cg')">5-сабақ<small>Суреттер мен графика</small></button>
-</div></div>
-</div></div></section>
-<script src="site.js"></script>
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon">DA</div>
+      <span>Damu AI</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Басты бет</a>
+      <a href="index.html#courses">Курстар</a>
+      <a href="index.html#about">Damu AI</a>
+    </nav>
+  </header>
+
+  <main class="course-page">
+    <a href="index.html" class="back-link">← Басты бетке қайту</a>
+    <h1>Canva курсы</h1>
+    <p class="course-intro">
+      Canva арқылы дизайн жасауды, шаблондармен жұмыс істеуді, мәтін мен графика қосуды үйреніңіз.
+    </p>
+
+    <div class="lessons">
+      <div class="lesson-card">
+        <h3>1-сабақ</h3>
+        <p>Canva-ға кіріспе</p>
+        <a href="https://youtu.be/8XroIaIyPXY?si=J5krrXheUSEi7FcF" target="_blank">Сабақты ашу</a>
+      </div>
+
+      <div class="lesson-card">
+        <h3>2-сабақ</h3>
+        <p>Интерфейспен танысу</p>
+        <a href="https://youtu.be/LSoFhtOnUaE?si=HeUScebhPesfhyCI" target="_blank">Сабақты ашу</a>
+      </div>
+
+      <div class="lesson-card">
+        <h3>3-сабақ</h3>
+        <p>Шаблондармен жұмыс</p>
+        <a href="https://youtu.be/iKq5Cdff6uk?si=Ef8z4qQGS8ZqpTlr" target="_blank">Сабақты ашу</a>
+      </div>
+
+      <div class="lesson-card">
+        <h3>4-сабақ</h3>
+        <p>Текстпен жұмыс</p>
+        <a href="https://youtu.be/nIhfQqX__Rg?si=PuwD7ACmn1tWfnLu" target="_blank">Сабақты ашу</a>
+      </div>
+
+      <div class="lesson-card">
+        <h3>5-сабақ</h3>
+        <p>Суреттер мен графика</p>
+        <a href="https://youtu.be/OZGL-o0Y4cg?si=DddsQisGswqiHQY4" target="_blank">Сабақты ашу</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Damu AI</p>
+  </footer>
 </body>
 </html>
-
