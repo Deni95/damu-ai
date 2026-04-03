@@ -1,152 +1,102 @@
 <!DOCTYPE html>
 <html lang="kk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Damu AI</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: white;
-}
-
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-}
-
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 25px;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #00e0ff;
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    margin-top: 100px;
-}
-
-.hero h1 {
-    font-size: 60px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 20px;
-    color: #d1d1d1;
-}
-
-/* BUTTONS */
-.buttons {
-    margin-top: 30px;
-}
-
-.btn {
-    padding: 14px 28px;
-    margin: 10px;
-    border: none;
-    border-radius: 30px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn-primary {
-    background: #00e0ff;
-    color: black;
-}
-
-.btn-primary:hover {
-    background: #00bcd4;
-}
-
-.btn-outline {
-    background: transparent;
-    border: 2px solid #00e0ff;
-    color: #00e0ff;
-}
-
-.btn-outline:hover {
-    background: #00e0ff;
-    color: black;
-}
-
-/* ICONS */
-.icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    gap: 40px;
-}
-
-.icon-box {
-    text-align: center;
-}
-
-.icon {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Damu AI</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<header>
-    <div class="logo">🤖 Damu AI</div>
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon">DA</div>
+      <span>Damu AI</span>
+    </div>
 
-    <nav>
-        <a href="#">Басты бет</a>
-        <a href="#">Курстар</a>
-        <a href="#">Damu AI</a>
+    <nav class="nav">
+      <a href="index.html">Басты бет</a>
+      <a href="#courses">Курстар</a>
+      <a href="#about">Damu AI</a>
     </nav>
-</header>
+  </header>
 
-<section class="hero">
-    <h1>Damu AI</h1>
-    <p>Заманауи AI құралдарын үйреніңіз: Canva, ChatGPT, Gemini</p>
+  <main>
+    <section class="hero">
+      <div class="hero-badge">Заманауи оқу платформасы</div>
+      <h1>Damu AI</h1>
+      <p>
+        Заманауи AI құралдарын үйреніңіз: Canva, ChatGPT, Gemini
+      </p>
 
-    <div class="buttons">
-        <button class="btn btn-primary">Курстарды қарау</button>
-        <button class="btn btn-outline">Damu AI-мен танысу</button>
-    </div>
-</section>
+      <div class="hero-buttons">
+        <a href="#courses" class="btn btn-primary">Курстарды қарау</a>
+        <a href="#about" class="btn btn-secondary">Damu AI-мен танысу</a>
+      </div>
+    </section>
 
-<section class="icons">
-    <div class="icon-box">
-        <div class="icon">🎨</div>
-        <p>Canva</p>
-    </div>
+    <section class="courses" id="courses">
+      <h2>Танымал курстар</h2>
+      <div class="cards">
 
-    <div class="icon-box">
-        <div class="icon">🤖</div>
-        <p>ChatGPT</p>
-    </div>
+        <a href="canva.html" class="card">
+          <div class="card-icon">🎨</div>
+          <h3>Canva</h3>
+          <p>Дизайн жасау, шаблондармен жұмыс, мәтін мен графика.</p>
+          <span class="card-link">Курсқа өту →</span>
+        </a>
 
-    <div class="icon-box">
-        <div class="icon">✨</div>
-        <p>Gemini</p>
-    </div>
-</section>
+        <a href="chatgpt.html" class="card">
+          <div class="card-icon">🤖</div>
+          <h3>ChatGPT</h3>
+          <p>Сұрақ қою, мәтін жазу, идея табу және AI-мен жұмыс істеу.</p>
+          <span class="card-link">Курсқа өту →</span>
+        </a>
+
+        <a href="gemini.html" class="card">
+          <div class="card-icon">✨</div>
+          <h3>Gemini</h3>
+          <p>Google AI құралдарын қолдану және тиімді prompt жазу.</p>
+          <span class="card-link">Курсқа өту →</span>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="features" id="about">
+      <h2>Неге Damu AI?</h2>
+
+      <div class="feature-grid">
+        <div class="feature-box">
+          <div class="feature-icon">📚</div>
+          <h3>Қарапайым сабақтар</h3>
+          <p>Әр курс түсінікті және кезең-кезеңімен жасалған.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">🧠</div>
+          <h3>AI құралдары</h3>
+          <p>Бүгінгі күнге керек ең пайдалы платформаларды үйренесіз.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">🎥</div>
+          <h3>Видео сабақтар</h3>
+          <p>Материалды видео арқылы тез әрі ыңғайлы меңгеріңіз.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">🚀</div>
+          <h3>Тәжірибелік оқу</h3>
+          <p>Тек теория емес, нақты қолдануға арналған білім.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Damu AI. Барлық құқықтар қорғалған.</p>
+  </footer>
 
 </body>
 </html>
