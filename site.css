@@ -1,1 +1,21 @@
+function setVideo(frameId, btn, videoId){
+  document.getElementById(frameId).src='https://www.youtube.com/embed/'+videoId;
+  btn.parentElement.querySelectorAll('.lesson-btn').forEach(el=>el.classList.remove('active'));
+  btn.classList.add('active');
+}
+function toggleQuiz(id){
+  document.getElementById(id).classList.toggle('active');
+}
+function checkQuiz(prefix, resultId, count){
+  let score=0;
+  for(let i=1;i<=count;i++){
+    const selected=document.querySelector('input[name="'+prefix+i+'"]:checked');
+    if(!selected){document.getElementById(resultId).innerText='Алдымен барлық сұраққа жауап бер.';return;}
+    score+=Number(selected.value);
+  }
+  document.getElementById(resultId).innerText='Нәтиже: '+score+'/'+count;
+}
+function showDone(name){
+  alert('Жарайсың! '+name+' курсы аяқталды!');
+}
 
