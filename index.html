@@ -1,61 +1,153 @@
 <!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Damu AI</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+    }
+
+    /* HEADER */
+    .header {
+      background: linear-gradient(135deg, #4f46e5, #9333ea);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 42px;
+      margin: 10px 0;
+    }
+
+    .header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background: white;
+      color: #4f46e5;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e0e7ff;
+    }
+
+    /* COURSES */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #4f46e5;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      background: #3730a3;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <h1>Damu AI</h1>
+  <p>Canva, Gemini, ChatGPT, Kahoot және NotebookLM курстары бір жерде</p>
+
+  <a href="#" class="btn">Бастау</a>
+  <a href="#courses" class="btn">Барлық курстар</a>
+</div>
+
+<!-- COURSES -->
+<div class="container" id="courses">
+  <h2>Барлық курстар</h2>
+
+  <div class="courses">
+
+    <div class="card">
+      <h3>🎨 Canva</h3>
+      <p>Дизайн, шаблондар және презентация жасау</p>
+      <a href="canva.html">Курсты ашу</a>
     </div>
+
+    <div class="card">
+      <h3>💎 Gemini</h3>
+      <p>AI арқылы идея генерация және жұмыс</p>
+      <a href="gemini.html">Курсты ашу</a>
+    </div>
+
+    <div class="card">
+      <h3>🤖 ChatGPT</h3>
+      <p>Промпт, мәтін жазу және AI көмекші</p>
+      <a href="chatgpt.html">Курсты ашу</a>
+    </div>
+
+    <div class="card">
+      <h3>🎯 Kahoot</h3>
+      <p>Тест жасау және ойын форматында оқыту</p>
+      <a href="kahoot.html">Курсты ашу</a>
+    </div>
+
+    <div class="card">
+      <h3>📚 NotebookLM</h3>
+      <p>Ақпаратты талдау және оқу құралдары</p>
+      <a href="notebooklm.html">Курсты ашу</a>
+    </div>
+
   </div>
 </div>
 
-<section class="hero">
-  <div class="container">
-    <div class="hero-box">
-      <div class="badge">Қазақ тіліндегі AI оқу платформасы</div>
-      <h1>Damu AI</h1>
-      <p>Canva, Gemini, ChatGPT, Kahoot және NotebookLM курстарын бір жерде оқуға арналған әдемі әрі ыңғайлы платформа.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="canva.html">Бастауды бастау</a>
-        <a class="btn btn-secondary" href="#courses">Барлық курстар</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="courses">
-  <div class="container">
-    <h2 class="section-title">Барлық курстар</h2>
-    <p class="section-text">Өзіңе керек бөлімді таңда. Әр курс жеке бетте ашылады.</p>
-    <div class="grid">
-      <a class="card" href="canva.html">
-        <div class="icon">🎨</div>
-        <h3>Canva</h3>
-        <p>Дизайн жасау, шаблондар, мәтін, сурет және презентация.</p>
-        <div class="meta"><span>5+ сабақ</span><span>Дизайн</span></div>
-      </a>
-      <a class="card" href="gemini.html">
-        <div class="icon">💎</div>
-        <h3>Gemini</h3>
-        <p>Сұраныс жазу, идея генерациясы және AI-мен жұмыс істеу.</p>
-        <div class="meta"><span>5 сабақ</span><span>Google AI</span></div>
-      </a>
-      <a class="card" href="chatgpt.html">
-        <div class="icon">🤖</div>
-        <h3>ChatGPT</h3>
-        <p>Промпт, мәтін жазу, ой жинақтау және күнделікті көмек.</p>
-        <div class="meta"><span>6 сабақ</span><span>AI көмекші</span></div>
-      </a>
-      <a class="card" href="kahoot.html">
-        <div class="icon">🧠</div>
-        <h3>Kahoot</h3>
-        <p>Викторина, тест және оқушы нәтижелерін талдау.</p>
-        <div class="meta"><span>6 сабақ</span><span>Quiz</span></div>
-      </a>
-      <a class="card" href="notebooklm.html">
-        <div class="icon">📚</div>
-        <h3>NotebookLM</h3>
-        <p>Дереккөздермен жұмыс, қысқаша мазмұн және study guide.</p>
-        <div class="meta"><span>6 сабақ</span><span>Талдау</span></div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<div class="footer">© 2026 Damu AI</div>
 </body>
 </html>
