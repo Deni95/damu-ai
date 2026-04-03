@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="kk">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Gemini — Damu AI</title><link rel="stylesheet" href="style.css"></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gemini — Damu AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-<div class="topbar"><div class="container nav"><a class="brand" href="index.html"><span class="brand-logo">📘</span> Damu AI</a></div></div>
-<section class="page-hero"><div class="container"><a class="back-link" href="index.html">← Барлық курстар</a>
-<div class="course-shell">
-<div class="player-card"><h1>💎 Gemini курсы</h1><p>Gemini арқылы мәтін, идея, сұраныс және AI құралдарымен жұмыс жасауды меңгер.</p>
-<iframe id="video-gemini" class="video-frame" src="https://www.youtube.com/embed/FjFByBnClmI" allowfullscreen></iframe>
-<div class="action-row"><button class="action complete" onclick="showDone('Gemini')">Сабақты аяқтау</button><button class="action openquiz" onclick="toggleQuiz('quiz-gemini')">Тестті ашу</button></div>
-<div id="quiz-gemini" class="quiz-box">
-<div class="question"><p>1. Gemini қандай құрал?</p><label><input type="radio" name="g1" value="1"> AI құралы</label><label><input type="radio" name="g1" value="0"> Фотоаппарат</label></div>
-<div class="question"><p>2. Жақсы жауап алу үшін не керек?</p><label><input type="radio" name="g2" value="1"> Нақты сұраныс</label><label><input type="radio" name="g2" value="0"> Бос мәтін</label></div>
-<div class="question"><p>3. Gemini мәтін жазуға көмектесе ме?</p><label><input type="radio" name="g3" value="1"> Иә</label><label><input type="radio" name="g3" value="0"> Жоқ</label></div>
-<button class="action openquiz" onclick="checkQuiz('g','result-gemini',3)">Нәтижені көру</button><div id="result-gemini" class="result">Нәтиже осында шығады.</div>
-</div></div>
-<div class="side-card"><div class="lesson-list">
-<button class="lesson-btn active" onclick="setVideo('video-gemini',this,'FjFByBnClmI')">1-сабақ<small>Gemini-ге кіріспе</small></button>
-<button class="lesson-btn" onclick="setVideo('video-gemini',this,'M0IkPs61L5c')">2-сабақ<small>Интерфейс</small></button>
-<button class="lesson-btn" onclick="setVideo('video-gemini',this,'FjFByBnClmI')">3-сабақ<small>Сұраныс жазу</small></button>
-<button class="lesson-btn" onclick="setVideo('video-gemini',this,'M0IkPs61L5c')">4-сабақ<small>Идея генерациясы</small></button>
-<button class="lesson-btn" onclick="setVideo('video-gemini',this,'FjFByBnClmI')">5-сабақ<small>Практика</small></button>
-</div></div>
-</div></div></section>
-<script src="site.js"></script>
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon">DA</div>
+      <span>Damu AI</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Басты бет</a>
+      <a href="index.html#courses">Курстар</a>
+      <a href="index.html#about">Damu AI</a>
+    </nav>
+  </header>
+
+  <main class="course-page">
+    <a href="index.html" class="back-link">← Басты бетке қайту</a>
+    <h1>Gemini курсы</h1>
+    <p class="course-intro">
+      Gemini арқылы Google AI құралдарын қолдануды, тиімді сұраныс беруді және өнімділікті арттыруды үйреніңіз.
+    </p>
+
+    <div class="lessons">
+      <div class="lesson-card">
+        <h3>1-сабақ</h3>
+        <p>Gemini-ге кіріспе</p>
+        <a href="https://youtu.be/FjFByBnClmI?si=Z6gTF1m0xAtOaThO" target="_blank">Сабақты ашу</a>
+      </div>
+
+      <div class="lesson-card">
+        <h3>2-сабақ</h3>
+        <p>Gemini интерфейсі</p>
+        <a href="https://youtu.be/M0IkPs61L5c?si=cA5SelJ99RwvYOn6" target="_blank">Сабақты ашу</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Damu AI</p>
+  </footer>
 </body>
 </html>
