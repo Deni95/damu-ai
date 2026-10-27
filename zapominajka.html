@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Запоминайка — Damu AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="zapominajka.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon">DA</div>
+      <span>Damu AI</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Басты бет</a>
+      <a href="index.html#courses">Курстар</a>
+      <a href="zapominajka.html">Запоминайка</a>
+    </nav>
+  </header>
+
+  <main class="zap">
+    <a href="index.html" class="back-link">← Басты бетке қайту</a>
+    <h1>🔔 Запоминайка</h1>
+    <p class="zap-intro">
+      Запишите голосовую заметку — она превратится в текст, а в нужное время
+      Запоминайка напомнит о ней, как будильник.
+    </p>
+
+    <section class="zap-panel">
+      <div class="zap-recorder">
+        <button id="recordBtn" class="rec-btn" type="button" aria-label="Начать запись">
+          <span class="rec-dot"></span>
+        </button>
+        <div class="rec-info">
+          <div id="recStatus" class="rec-status">Нажмите, чтобы записать</div>
+          <div id="recTimer" class="rec-timer">00:00</div>
+        </div>
+        <label class="zap-lang">
+          Язык
+          <select id="langSelect">
+            <option value="ru-RU">Русский</option>
+            <option value="kk-KZ">Қазақша</option>
+            <option value="en-US">English</option>
+          </select>
+        </label>
+      </div>
+
+      <p id="sttWarning" class="zap-warning" hidden>
+        Ваш браузер не умеет распознавать речь. Аудио всё равно запишется, а текст
+        можно ввести вручную. Для распознавания используйте Chrome, Edge или Safari.
+      </p>
+
+      <audio id="previewAudio" controls hidden></audio>
+
+      <label class="zap-field">
+        Текст напоминания
+        <textarea id="noteText" rows="4" placeholder="Здесь появится распознанный текст. Его можно поправить вручную."></textarea>
+      </label>
+
+      <div class="zap-field">
+        Когда напомнить
+        <input id="remindAt" type="datetime-local" />
+        <div class="zap-quick">
+          <button type="button" data-add="10">+10 мин</button>
+          <button type="button" data-add="30">+30 мин</button>
+          <button type="button" data-add="60">+1 час</button>
+          <button type="button" data-preset="evening">Сегодня 20:00</button>
+          <button type="button" data-preset="tomorrow">Завтра 9:00</button>
+        </div>
+      </div>
+
+      <div class="zap-actions">
+        <button id="saveBtn" class="btn btn-primary" type="button">Сохранить напоминание</button>
+        <button id="clearBtn" class="btn btn-secondary" type="button">Очистить</button>
+      </div>
+      <p id="formMsg" class="zap-msg" role="status"></p>
+    </section>
+
+    <p id="notifyHint" class="zap-hint">
+      ⚠️ Будильник срабатывает, пока эта страница открыта (можно в фоновой вкладке).
+      Чтобы получать системные уведомления, <button id="notifyBtn" type="button" class="link-btn">разрешите уведомления</button>.
+      Для гарантированного напоминания добавьте его в календарь кнопкой «📅».
+    </p>
+
+    <section class="zap-list-wrap">
+      <h2>Мои напоминания</h2>
+      <ul id="noteList" class="zap-list"></ul>
+      <p id="emptyMsg" class="zap-empty">Пока нет напоминаний. Запишите первое!</p>
+    </section>
+  </main>
+
+  <div id="alarm" class="alarm" hidden>
+    <div class="alarm-box" role="alertdialog" aria-labelledby="alarmTitle">
+      <div class="alarm-bell">⏰</div>
+      <h2 id="alarmTitle">Напоминание!</h2>
+      <p id="alarmText" class="alarm-text"></p>
+      <audio id="alarmAudio" controls></audio>
+      <div class="alarm-actions">
+        <button id="snoozeBtn" class="btn btn-secondary" type="button">Отложить на 10 мин</button>
+        <button id="doneBtn" class="btn btn-primary" type="button">Готово</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Damu AI</p>
+  </footer>
+
+  <script src="zapominajka.js"></script>
+</body>
+</html>
