@@ -72,8 +72,6 @@ Anchor times to the audience's timezone, not the user's, if those differ.
 - **2 buyers** - people who could actually buy. Comment for weeks before any
   DM, and never pitch in a comment.
 
-Hand the list to `/ig-comment`.
-
 ## Output
 
 ```
